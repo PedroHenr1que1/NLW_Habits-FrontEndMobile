@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { Fonts } from '../../themes/Fonts';
 
 export const ContainerLoading = styled.View`
   flex: 1;
@@ -11,6 +12,6 @@ export const StyledLoading = styled.ActivityIndicator`
 `;
 
 export const TextLoading = styled.Text`
-  font-family: "Inter_500Medium";
+  font-family: ${Fonts.regular};
   color: #7C3AEd;
 `;
