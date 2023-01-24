@@ -1,5 +1,7 @@
+import { View } from 'react-native'
 
 import { StatusBar } from 'expo-status-bar';
+
 import {
   useFonts,
   Inter_400Regular,
@@ -18,9 +20,11 @@ export default function App() {
     Inter_700Bold
   })
 
-  if(!fontsLoaded){
+  if(fontsLoaded){
     return (
-      <Loading message='Carregando as fontes, aguarde...'/>
+      <View style={{backgroundColor: "#09090A", flex: 1}}>
+        <Loading message='Carregando as fontes, aguarde...'/>
+      </View>
     )
   }
 
